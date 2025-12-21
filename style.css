@@ -1,0 +1,225 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+        }
+        .goat-bg {
+            background: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), 
+                        url('https://i.ibb.co/VWV0pY6/goat-silhouette.png'); /* Placeholder for your uploaded logo */
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-gradient {
+            background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+/* Labels & Inputs */
+.input-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.input-field {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #fbbf24;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+button,
+.btn-primary,
+.btn-secondary,
+.btn-submit {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-primary {
+    background-color: #fbbf24;
+    color: #000;
+    font-weight: 800;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 15px -3px rgba(251, 191, 36, 0.2);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #f59e0b;
+}
+
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-submit:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(251,191,36,0.12);
+    /* Ensure focus keeps intended background */
+    background-color: inherit;
+}
+
+/* Active feedback */
+.btn-primary:active,
+.btn-secondary:active,
+.btn-submit:active,
+button:active {
+    transform: translateY(1px) scale(0.997);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-weight: 800;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Specific fix for .btn-secondary so it doesn't show white when selected */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 800;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #fbbf24;
+}
+
+/* Ensure submit button keeps contrast (it was white by design; keep hover consistent) */
+.btn-submit:focus,
+.btn-submit:active {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* UI Elements */
+.logo-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(251, 191, 36, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: opacity 0.2s;
+}
+
+.social-tag:hover {
+    opacity: 0.8;
+}
+
+/* Ensure selects keep dark theme, hide native arrow, add custom arrow */
+select,
+select.input-field,
+.select-field {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    background: rgba(255, 255, 255, 0.05) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23FFFFFF' d='M5 7l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 1rem center / 0.8rem;
+    padding-right: 2.5rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+}
+
+/* Remove Windows native arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Focus/active states for selects */
+select:focus,
+select.input-field:focus,
+.select-field:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #fbbf24;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(251,191,36,0.08);
+}
+
+/* Option fallback styling */
+option {
+    background: #0b0b0b;
+    color: #fff;
+}
+
+/* Reinforce button focus/active so they don't flash white */
+.btn-primary,
+.btn-secondary,
+.btn-submit,
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(251,191,36,0.12);
+}
+
+/* Ensure secondary button retains dark glass look when focused/active */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
