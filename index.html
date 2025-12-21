@@ -1,89 +1,122 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="hotelform.css" />
-    <title>Hotel Feedback Form</title>
-  </head>
-  <body>
-    <header>
-      <h1>Hotel Feedback Form</h1>
-      <p> Thank you for staying with us. Please provide feedback on your recent stay.</p>
-    </header>
-    <main>
-      <form action="https://hotel-feedback.freecodecamp.org" method="POST">
-        <fieldset>
-          <legend>Personal Information </legend>
-          <label for="full-name"> Name (required):</label>
-          <input type="text" name="name" id="full-name" placeholder="e.g., John Doe" size="20">
-          
-          <label for="email">Email address (required):</label>
-          <input
-            placeholder="example@email.com"
-            required
-            id="email"
-            type="email"
-            name="email"
-            size="20"
-          />
-          <label for="age"> Age (optional):</label>
-           <input 
-          placeholder="age"
-          required id="age"
-          type="number"
-          name="age"
-          min="3"
-          max="100"
-          />
-        </fieldset>
-        <fieldset>
-          <legend>Was this your first time at our hotel?</legend>
-            <input id="yes-option" type="radio" name="hotel-stay" />
-          <label for="yes-option">Yes</label>
-            <input id="no-option" type="radio" name="hotel-stay" />
-          <label for="no-option">No</label>
-        </fieldset>
-        <fieldset>
-          <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
-          <input type="checkbox" id="ads" name="ads" value="ads">
-          <label for="ads">Social Media Ads</label>
-           <input type="checkbox" id="recommendation" name="recommendation" value="recommendation">
-   <label for="recommendation">Personal Recommendation</label>
-    <input type="checkbox" id="location" name="location" value="location">
-   <label for="location">Location</label> 
-   <input checked type="checkbox" id="reputation" name="reputation" value="reputation">
-   <label for="reputation">Reputation</label>
-    <input type="checkbox" id="price" name="price" value="price" />
-          <label for="price">Price</label> 
-        </fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Banks | The GOAT Feedback</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="C:\Users\USER\Documents\Feedback forms challenge\Favicon.png" type="image/png" >
+</head>
+<body class="goat-bg min-h-screen">
 
-        <fieldset>
-     <legend>Ratings</legend>
-     <label for="service">How was the service?</label>
-     <select id="service" name="service">
-       <option value="poor">Poor</option>
-       <option value="satisfactory">Satisfactory</option>
-       <option value="good">Good</option>
-       <option value="very-good">Very Good</option>
-        <option selected value="excellent">Excellent</option>
-       </select>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="flex items-center gap-2">
+            <div class="logo-circle">
+                <span class="font-bold text-yellow-500 text-xs">MB</span>
+            </div>
+            <span class="font-extrabold tracking-tighter text-xl uppercase">MR BANKS</span>
+        </div>
+        <a href="https://x.com/Mrbankstips?s=20" target="_blank" class="text-sm text-gray-400 hover:text-white transition underline decoration-yellow-500/40">Follow the GOAT →</a>
+    </nav>
 
-       <label for="food">How was the food?</label>
-        <select id="food" name="food">
-          <option value="poor">Poor</option>
-          <option value="satisfactory">Satisfactory</option>
-          <option value="good">Good</option>
-          <option value="very-good">Very Good</option>
-          <option selected value="excellent">Excellent</option>
-          </select>
-     </fieldset>  
-      <label for="comments"> Other Comments? </label> 
-      <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
-      </textarea>
-        <button type="submit">Submit</button> 
-        </form>
+    <header class="max-w-4xl mx-auto text-center py-16 px-6">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            THE <span class="accent-gradient">GOAT</span> RECORD.
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+            You've seen the tickets. You've seen the wins. Now, help us build the next era of the Mr Banks community.
+        </p>
         
-    </main>
-  </body>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="#feedback" class="btn-primary">
+                Share Feedback
+            </a>
+            <a href="https://x.com/Mrbankstips/status/1999963232770138315?s=20" target="_blank" class="btn-secondary">
+                View Past Wins
+            </a>
+        </div>
+    </header>
+
+    <section class="max-w-2xl mx-auto px-6 mb-12">
+        <div class="glass p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 border border-yellow-500/20">
+            <span class="font-bold text-gray-300 uppercase tracking-widest text-xs">Join the Winning Team:</span>
+            <div class="flex gap-3">
+                <a href="https://x.com/Mrbankstips?s=20" target="_blank" class="social-tag bg-[#1DA1F2]">Twitter</a>
+                <a href="https://t.me/MrBanksFreeChannel" target="_blank" class="social-tag bg-[#0088cc]">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="max-w-2xl mx-auto px-6 pb-24">
+        <div class="glass p-8 md:p-12 rounded-3xl shadow-2xl">
+            <h2 class="text-2xl font-bold mb-2">Member Report</h2>
+            <p class="text-gray-500 mb-8">How can we make the bank bigger?</p>
+
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="input-label">Twitter Handle</label>
+                        <input type="text" placeholder="@yourhandle" class="input-field">
+                    </div>
+                    <div>
+                        <label class="input-label">Overall Rating</label>
+                        <select class="input-field">
+                            <option>⭐⭐⭐⭐⭐ (Legendary)</option>
+                            <option>⭐⭐⭐⭐ (Solid)</option>
+                            <option>⭐⭐⭐ (Good)</option>
+                            <option>⭐⭐ (Room for improvement)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="input-label">Following Since (Year)</label>
+                        <select class="input-field" id="year-select">
+                            <option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                            <option>2019</option><option>2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option>
+                            <option>2013</option><option>2012</option><option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+                            <option>2007</option><option>2006</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option>
+                            <option>2001</option><option>2000</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="input-label">Frequency of Wins</label>
+                        <select class="input-field">
+                            <option>Daily Green</option>
+                            <option>Weekly Profit</option>
+                            <option>Just joined</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="input-label">What should Mr Banks improve on?</label>
+                    <textarea rows="3" placeholder="Odds, timing, more markets? Be honest." class="input-field"></textarea>
+                </div>
+
+                <div>
+                    <label class="input-label">What's your biggest win with Mr Banks?</label>
+                    <textarea rows="3" placeholder="Tell us about that green ticket..." class="input-field"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Submit to the Bank
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 border-t border-white/5">
+        <p class="text-gray-600 text-sm mb-4">© 2025 Mr Banks Community • Gamble Responsibly</p>
+        <div class="flex justify-center gap-6 text-xs text-gray-500">
+            <a href="https://x.com/Mrbankstips?s=20" class="hover:text-white transition">X (Twitter)</a>
+            <a href="https://t.me/MrBanksFreeChannel" class="hover:text-white transition">Telegram</a>
+        </div>
+    </footer>
+
+</body>
 </html>
